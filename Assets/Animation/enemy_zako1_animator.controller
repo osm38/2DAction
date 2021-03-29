@@ -55,7 +55,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: enemy_walk
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -67,7 +67,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4eb39715c60baa345ae8a26097cae6df, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0e640760cdebe4a4494d58a296f4cde3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -93,7 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5b5ce599c770f6e4387986d48f10d379, type: 2}
+  m_Motion: {fileID: 7400000, guid: ac54a78d89174b849963ceb4b1281f67, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

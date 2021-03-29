@@ -43,12 +43,12 @@ public class Human : MonoBehaviour
     private float otherJumpSpeed = 0.0f;
     private float continueTime = 0.0f;
     private float blinkTime = 0.0f;
-    private string enemyTag = "Enemy";
-    private string deadAreaTag = "DeadArea";
-    private string hitAreaTag = "HitArea";
-    private string moveFloorTag = "MoveFloor";
-    private string fallFloorTag = "FallFloor";
-    private string jumpStepTag = "JumpStep";
+    private string enemyTag = Tag.Enemy.ToString();
+    private string deadAreaTag = Tag.DeadArea.ToString();
+    private string hitAreaTag = Tag.HitArea.ToString();
+    private string moveFloorTag = Tag.MoveFloor.ToString();
+    private string fallFloorTag = Tag.FallFloor.ToString();
+    private string jumpStepTag = Tag.JumpStep.ToString();
     #endregion
 
     void Start()

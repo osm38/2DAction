@@ -6,7 +6,7 @@ public class PlayerTriggerCheck : MonoBehaviour
 {
     // ”»’è“à‚ÉƒvƒŒƒCƒ„[‚ª‹‚é
     [HideInInspector] public bool isOn = false;
-    private string playerTag = "Player";
+    private string playerTag = Tag.Player.ToString();
 
     #region // ÚG”»’è
     private void OnTriggerEnter2D(Collider2D collision)

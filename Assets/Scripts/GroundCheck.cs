@@ -6,10 +6,10 @@ public class GroundCheck : MonoBehaviour
 {
     [Header("エフェクトが付いた床を判定するか")] public bool checkPlatformGround = true;
 
-    private string groundTag = "Ground";
-    private string platformTag = "GroundPlatform";
-    private string moveFloorTag = "MoveFloor";
-    private string fallFloorTag = "FallFloor";
+    private string groundTag = Tag.Ground.ToString();
+    private string platformTag = Tag.GroundPlatform.ToString();
+    private string moveFloorTag = Tag.MoveFloor.ToString();
+    private string fallFloorTag = Tag.FallFloor.ToString();
     private bool isGround = false;
     private bool isGroundEnter, isGroundStay, isGroundExit;
 
