@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundHeight: 2
-  jumpSpeed: 2
+  jumpSpeed: 14
   playerStepOn: 0
 --- !u!114 &3579379577697927689
 MonoBehaviour:
