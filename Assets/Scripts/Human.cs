@@ -260,8 +260,8 @@ public class Human : MonoBehaviour
 
     private void SetAnimation()
     {
-        animator.SetBool("run", isRun || isOtherJump);
-        animator.SetBool("jump", isJump);
+        animator.SetBool("run", isRun);
+        animator.SetBool("jump", isJump || isOtherJump);
         animator.SetBool("ground", isGround);
     }
 
