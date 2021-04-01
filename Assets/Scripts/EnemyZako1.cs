@@ -11,6 +11,7 @@ public class EnemyZako1 : MonoBehaviour
     [Header("画面外でも行動する")] public bool nonVisibleAct;
     [Header("接触判定")] public EnemyCollisionCheck checkCollision;
     [Header("死亡SE")] public AudioClip deadSE;
+    [Header("接地判定")] public GroundCheck gc;
     #endregion
 
     #region // プライベート変数
@@ -42,7 +43,7 @@ public class EnemyZako1 : MonoBehaviour
             if (sr.isVisible || nonVisibleAct)
             {
                 // 接触している場合は逆を向く
-                if (checkCollision.isOn)
+                if (checkCollision.isOn || gc.IsAboutToFall())
                 {
                     rightTleftF = !rightTleftF;
                 }
@@ -81,4 +82,7 @@ public class EnemyZako1 : MonoBehaviour
             }
         }
     }
+
+
+
 }

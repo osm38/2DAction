@@ -5,12 +5,14 @@ using UnityEngine;
 public class GroundCheck : MonoBehaviour
 {
     [Header("エフェクトが付いた床を判定するか")] public bool checkPlatformGround = true;
+    [Header("落ちそうなのを判定するか")] public bool checkFall = true;
 
     private string groundTag = Tag.Ground.ToString();
     private string platformTag = Tag.GroundPlatform.ToString();
     private string moveFloorTag = Tag.MoveFloor.ToString();
     private string fallFloorTag = Tag.FallFloor.ToString();
     private bool isGround = false;
+    private bool isAboutToFall = false;
     private bool isGroundEnter, isGroundStay, isGroundExit;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,6 +68,24 @@ public class GroundCheck : MonoBehaviour
         isGroundExit = false;
 
         return isGround;
+    }
+
+    ///<summary>
+    ///落ちそうかどうかを判定するメソッド
+    /// </summary>
+    public bool IsAboutToFall()
+    {
+        if (checkFall && isGroundExit)
+        {
+            isAboutToFall = true;
+            isGroundExit = false;
+        }
+        else
+        {
+            isAboutToFall = false;
+        }
+
+        return isAboutToFall;
     }
 
 }
