@@ -89,7 +89,14 @@ public class StageController : MonoBehaviour
                     gm.stageNo = nextStageNo;
                 }
                 gm.isStageClear = false;
-                SceneManager.LoadScene("stage" + nextStageNo);
+                if(nextStageNo >= 2)
+                {
+                    SceneManager.LoadScene("title");
+                }
+                else
+                {
+                    SceneManager.LoadScene("stage" + nextStageNo);
+                }
                 doSceneChange = true;
             }
         }

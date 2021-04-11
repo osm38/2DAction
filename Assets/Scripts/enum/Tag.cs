@@ -20,7 +20,7 @@ public static class Collider2DExt
 {
     public static bool containsEnemyWrapTag(this Collider2D col)
     {
-        Tag[] wrapTags = { Tag.Ground, Tag.DeadArea, Tag.HitArea, Tag.JumpStep };
+        Tag[] wrapTags = { Tag.Ground, Tag.DeadArea, Tag.HitArea, Tag.JumpStep, Tag.Enemy };
 
         try
         {
