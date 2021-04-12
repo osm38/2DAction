@@ -103,4 +103,13 @@ public class GManager : MonoBehaviour
             Debug.Log("オーディオソースが設定されていません");
         }
     }
+
+    public void EndGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #elif UNITY_STANDALONE
+            Application.Quit();
+        #endif
+    }
 }
