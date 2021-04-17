@@ -39,4 +39,9 @@ public class Title : MonoBehaviour
             goNextScene = true;
         }
     }
+
+    public void EndGame()
+    {
+        gm.EndGame();
+    }
 }
