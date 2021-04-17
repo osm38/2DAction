@@ -320,8 +320,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 244132395}
-        m_TargetAssemblyTypeName: GManager, Assembly-CSharp
+      - m_Target: {fileID: 1292518070}
+        m_TargetAssemblyTypeName: StageController, Assembly-CSharp
         m_MethodName: EndGame
         m_Mode: 1
         m_Arguments:
@@ -10579,17 +10579,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0391084f43d7024dbf1491b571335d8, type: 3}
---- !u!114 &244132395 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 228436993132328818, guid: b0391084f43d7024dbf1491b571335d8, type: 3}
-  m_PrefabInstance: {fileID: 244132394}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f84d4147c83ae7419030418e36aa068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &278964841
 PrefabInstance:
   m_ObjectHideFlags: 0

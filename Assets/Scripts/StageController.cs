@@ -135,4 +135,9 @@ public class StageController : MonoBehaviour
         stageClearObj.SetActive(true);
         gm.PlaySE(stageClearSE);
     }
+
+    public void EndGame()
+    {
+        gm.EndGame();
+    }
 }
